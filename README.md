@@ -90,7 +90,7 @@ A full-stack **serverless web application** that allows users to search for defi
  
 10. *(Optional)* **Test the Lambda function directly**. The file `../src/events/event.json` can be used to test the function.  
 
-   **10a. Use the AWS CLI:**  
+	**10a. Use the AWS CLI:**
 
      ```bash
      aws lambda invoke \
@@ -100,13 +100,13 @@ A full-stack **serverless web application** that allows users to search for defi
 	 src/events/response.json
      ```
 
-   **10b. Use the AWS Management Console:**  
-   - Navigate to **Lambda** and select the function.  
-   - Select **Test**.  
-	 - Select **Create new event**  
-   - Enter an **Event name**.  
-   - In Event JSON, enter the contents of the event.json file.  
-   - Select **Test** in the upper right of the Test event dialog.  
+	**10b. Use the AWS Management Console:**
+	- Navigate to **Lambda** and select the function.  
+	- Select **Test**.  
+	- Select **Create new event**  
+	- Enter an **Event name**.  
+	- In Event JSON, enter the contents of the event.json file.  
+	- Select **Test** in the upper right of the Test event dialog.  
 
 11. In the Amplify console, click **Visit deployed URL** to access the application.  
 
@@ -134,19 +134,19 @@ aws-serverless-cloud-dictionary/
 ├── clouddictionaryapp/             # React app with configuration
 │   ├── src/                        # Application source code
 │   └── package.json                # Project dependencies
-├── terraform/                   	  # Terraform templates
+├── terraform/                   	# Terraform templates
 │   ├── main.tf                     # Main Terraform config
 │   ├── variables.tf                # Input variables
-│   ├── outputs.tf					        # Exported values
+│   ├── outputs.tf					# Exported values
 │   ├── terraform.tfvars            # Default variable values
-│   ├── providers.tf			          # AWS provider definition
-│   ├── versions.tf					        # Terraform version constraint
+│   ├── providers.tf			    # AWS provider definition
+│   ├── versions.tf					# Terraform version constraint
 │   └── records/                    # JSON seed data for DynamoDB table
 │   	├── records-1.json                	  
 │   	├── records-2.json                	  
 │   	├── records-3.json                	  
 │   	└── records-4.json                	  
-├── src/             				        # Lambda source code and events
+├── src/             				# Lambda source code and events
 │   └── dictionary_function/        # Lambda function
 │	    └── dictionary_lambda.py
 │   └── events/                     # Sample Lambda test events
